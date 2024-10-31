@@ -4,6 +4,8 @@ from PIL import Image # type: ignore
 import img2pdf # type: ignore
 
 
+# Configure
+#
 # 이미지 파일이 저장된 디렉토리
 image_dir = "/Users/naki/Documents/images"
 # 결과 pdf 파일명
@@ -13,10 +15,10 @@ output_pdf = "output.pdf"
 prefix = "image_"
 # Define the region to crop (left, upper, right, lower)
 # 홀수 페이지
-odd_region = (95, 65, 2255, 3000)
+odd_region = (100, 90, 1300, 2220)
 # Define the region to crop (left, upper, right, lower)
 # 짝수 페이지
-even_region = (150, 65, 2310, 3000)
+even_region = (140, 90, 1340, 2220)
 # dpi를 맞추자
 dpix = dpiy = 300
 
